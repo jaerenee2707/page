@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+.container {
+  font-family: 'Arimo';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c2ffc3;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px #4e684a;
+  height: 380px;
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.row div {
+  padding: 10px;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+
+.row {
+  clear: both;
+}
+
+.names {
+  font-size: 16px;
+  text-align: center;
+  background-color: #add8e6;
+}
+
+#gameMode {
+  font-family: 'Arimo';
+  background-color: #608f56;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  padding: 3px;
+  width: 200px;
+}
+
+.tictactoebutton {
+  font-size: 20px;
+  font-family: 'Arimo';
+  background-color: #608f56;
+  color: white;
+  border-radius: 20px;
+}
+
+#close{
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #6ca39f;
+  color: white;
+}
+#close:hover{
+  background-color: #396f6b;
+}

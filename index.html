@@ -1,0 +1,432 @@
+<html>
+
+<head>
+  <title>page by jae</title>
+  <meta name="google-site-verification" content="qmUNhidPMHJ23o6Ow94r5atnkBR0L0kxi9ZVUxNqRak" />
+  <meta name="description" content="Jaelyn Rogers is a front-end web developer with experience in creating responsive, user-friendly, and accessible websites. Check out her portfolio to interact with some of her amazing projects."/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="pg.css" rel="stylesheet" type="text/css" />
+  <link href="rps.css" rel="stylesheet" type="text/css" />
+  <link href="ttt.css" rel="stylesheet" type="text/css" />
+  <link href="cs.css" rel="stylesheet" type="text/css" />
+  <link href="ag.css" rel="stylesheet" type="text/css" />
+  <link href="ac.css" rel="stylesheet" type="text/css" />
+  <link href="wp.css" rel="stylesheet" type="text/css" />
+  <link href="sa.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <div class="full-screen-image">
+    <div class="typing-animation">imagine, design, create</div>
+  </div>
+  <div class="quote">
+    <img src="unnamed.png" alt="Creativity is intelligence having fun - Albert Einstein">
+    <hr class="heartsHR">
+    <div class="hearts"></div>
+    <hr class="heartsHR">
+    <!-- Explore and Box Buttons -->
+    <section>
+      <div class="explore">
+        <div class="inner">
+          <span class="title-g">What do you want to explore?</span>
+          <form autocomplete="off" action="/action_page.php">
+            <input type="text" id="search" class="autocomplete" placeholder="Search...">
+            <span class="icon">🧐</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="boxesEX">
+        <div class="rowEX">
+          <div class="checkEX" onclick="document.getElementById('AC').style.display='block'">
+            <div class="image">🎨</div>
+            <div class="description">avatar creator</div>
+          </div>
+          <div class="checkEX" onclick="document.getElementById('IFA').style.display='block'">
+            <div class="image">🧩</div>
+            <div class="description">activity ideas</div>
+          </div>
+          <div class="checkEX" onclick="document.getElementById('AG').style.display='block'">
+            <div class="image">🖼️</div>
+            <div class="description">gallery</div>
+          </div>
+        </div>
+        <div class="rowEX">
+          <div class="checkEX" onclick="document.getElementById('WP').style.display='block'">
+            <div class="image">✒️</div>
+            <div class="description">writing prompt</div>
+          </div>
+          <div class="checkEX" onclick="document.getElementById('RPS').style.display='block'">
+            <div class="image">✋</div>
+            <div class="description">rock paper scissors</div>
+          </div>
+          <div class="checkEX" onclick="document.getElementById('TTT').style.display='block'">
+            <div class="image">✏️</div>
+            <div class="description">tic tac toe</div>
+          </div>
+
+        </div>
+        <div class="rowEX">
+          <div class="checkEX" onclick="document.getElementById('PG').style.display='block'">
+            <div class="image">🔒</div>
+            <div class="description">password generator</div>
+          </div>
+          <div class="checkEX" onclick="document.getElementById('DG').style.display='block'">
+            <div class="image">🦖</div>
+            <div class="description">dino game</div>
+          </div>
+          <div class="checkEX" onclick="document.getElementById('SA').style.display='block'">
+            <div class="image">🎸</div>
+            <div class="description">Music Shuffler</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Modals and Activities-->
+    <section>
+      <!-- RPS -->
+      <div id="RPS" class="w3-modal" role="dialog" style="transform: scale(1.3);">
+        <div class="w3-modal-content">
+          <div class>
+            <div class="gameBox">
+              <div style="text-align: right;">
+                <button id="close" style="background-color: #8556b3;"
+                  onclick="document.getElementById('RPS').style.display='none'">close</button>
+              </div>
+              <br>
+              <div class="selections">
+                <button class="selection" data-selection="rock"> ✊ </button>
+                <button class="selection" data-selection="paper"> ✋ </button>
+                <button class="selection" data-selection="scissors"> ✌️ </button>
+              </div>
+              <div class="results">
+                <div>
+                  <p>You: <span class="score" data-your-score> 0</span></p>
+                </div>
+                <div data-final-column>
+                  <p>Computer: <span class="score" data-computer-score>0 </span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Password Generator-->
+      <div id="PG" class="w3-modal" style="transform: scale(1.3);">
+        <div class="w3-modal-content">
+          <div class>
+            <div style="font-family: 'Ysabeau', sans-serif; font-weight: 300; font-size: 20px;">
+              <div id="passwordModule" style="display: none;">
+                <p style="font-size: 27px;">Password Generator</p>
+                <div class="box" style="font-weight: 200;">
+                  <span id="passwordDisplay"></span>
+                  <div style="display: inline-block;">
+                    <div class="tooltip" id="myIcon" style="display: none;">
+                      <i class="far fa-copy" style="cursor: pointer;" onclick=Copy()></i>
+                      <span class="tooltiptext">copy</span>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <button id="generateButton">Generate Password</button>
+                <div>
+                  <br>
+                  <div class=checkboxes>
+                    <input type="checkbox" id="numbers" name="vehicle1" value="Numbers">
+                    <label for="numbers"> numbers </label><br>
+                    <input type="checkbox" id="symbols" name="vehicle2" value="Symbols">
+                    <label for="symbols"> symbols </label><br>
+                    <input type="checkbox" id="uppercase" name="upperscase" value="Uppercase">
+                    <label for="uppercase"> uppercase </label><br>
+                  </div>
+                  <br>
+                  <input type="range" id="mySlider" min="8" max="16">
+                  <span id="sliderValue"></span>
+                </div>
+                <div id="boxCopyMessage">
+                  <p id="copyMessage" style="display: none; ">Copied to clipboard!</p>
+                </div>
+                <div>
+                  <button id="close" onclick="document.getElementById('PG').style.display='none'"
+                    style=" text-align: right;">close</button>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tic Tac Toe -->
+      <div id="TTT" class="w3-modal" style="transform: scale(1.3);">
+        <div class="w3-modal-content">
+          <div class>
+            <div class="container">
+              <label for="gameMode">Game Mode:</label>
+              <select id="gameMode" name="gameMode">
+                <option value="playerVsPlayer">Player vs Player</option>
+                <option value="playerVsComputer">Player vs Computer</option>
+              </select><br><br>
+
+              <div>
+                <div class="row">
+                  <div id="0_0" onclick="place(this)"></div>
+                  <div id="1_0" onclick="place(this)"></div>
+                  <div id="2_0" onclick="place(this)"></div>
+                </div>
+                <div class="row">
+                  <div id="0_1" onclick="place(this)"></div>
+                  <div id="1_1" onclick="place(this)"></div>
+                  <div id="2_1" onclick="place(this)"></div>
+                </div>
+                <div class="row">
+                  <div id="0_2" onclick="place(this)"></div>
+                  <div id="1_2" onclick="place(this)"></div>
+                  <div id="2_2" onclick="place(this)"></div>
+                </div>
+              </div>
+              <div>
+                <br>
+                <button class="tictactoebutton" onclick="resetGame()" style="clear: both;">Reset</button>
+              </div>
+              <div style="clear: both; text-align: right; font-size: 20px; margin-top: 3px;">
+                <button id="close" onclick="document.getElementById('TTT').style.display='none'"
+                  style="background-color: #608f56; ">close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Coming Soon -->
+      <div id="CS" class="w3-modal" style="transform: scale(calc(90vw / 200px));">
+        <div class="w3-modal-content">
+          <div class>
+            <div class="CScontainer">
+              <p class="glow"> 👷🏾‍♀️Coming Soon🏗️</p>
+              <p class="CStruck">🚚</p>
+              <div style="clear: both; text-align: right; font-size: 20px; margin-top: 3px;">
+                <button id="CSclose" onclick="document.getElementById('CS').style.display='none'">close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Iframe Gallery https://gallerywrite.jaerenee.repl.co/-->
+      <div id="AG" class="w3-modal" role="dialog">
+        <div class="w3-modal-content">
+          <div class="AGbox">
+            <div style="text-align: right;">
+              <a class="galleryLink" href="https://artgallery.jaerenee.repl.co/" target="_blank">Open Gallery in a web
+                page for better viewing</a>
+
+              <button id="closeAG" onclick="document.getElementById('AG').style.display='none'">close</button>
+            </div>
+            <br>
+            <div style="background-color: white; text-align: center; height: 90%; width: 100%; margin-bottom: 2%">
+              <iframe src="https://artgallery.jaerenee.repl.co/" title="Gallery" allowfullscreen=true height=100%
+                style="border:none;" width=100%></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Avatar Creator -->
+      <section style="user-select: none;">
+        <div id="AC" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="ACcontainer">
+              <div style="text-align: right;">
+                <button id="ACclose" onclick="document.getElementById('AC').style.display='none'">close</button>
+              </div>
+              <div class="characterDiv">
+                <canvas id="canvas1"></canvas>
+                <canvas id="canvas2"></canvas>
+                <canvas id="canvas4"></canvas>
+                <canvas id="canvas3"></canvas>
+                <canvas id="canvas5"></canvas>
+              </div>
+              <div class="colors">
+                <div class="colorDiv">
+                  <label for="colorPicker5">body</label>
+                  <input type="color" id="colorPicker1">
+                </div>
+                <div class="colorDiv">
+                  <label for="colorPicker5">eye</label>
+                  <input type="color" id="colorPicker2">
+                </div>
+                <div class="colorDiv">
+                  <label for="colorPicker5">shirt</label>
+                  <input type="color" id="colorPicker3">
+                </div>
+                <div class="colorDiv">
+                  <label for="colorPicker5">pants</label>
+                  <input type="color" id="colorPicker4">
+                </div>
+                <div class="colorDiv">
+                  <label for="colorPicker5">hair</label>
+                  <input type="color" id="colorPicker5">
+                </div>
+                <div class="colorDiv">
+                  <label for="colorPicker6">extra</label>
+                  <input type="color" id="colorPicker6">
+                </div>
+              </div>
+
+              <div class="ACbottom">
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'hair')">✂️</button>
+                  <button class="tablinks" onclick="openCity(event, 'shirts')">👚</button>
+                  <button class="tablinks" onclick="openCity(event, 'pants')">🩳</button>
+                  <button class="tablinks" onclick="openCity(event, 'new')">📢</button>
+                </div>
+
+                <div id="hair" class="tabcontent">
+                </div>
+                <div id="shirts" class="tabcontent">
+                </div>
+                <div id="pants" class="tabcontent">
+                </div>
+                <div id="new" class="tabcontent">
+                  <h2>more coming soon</h2>
+                  <!-- <p>download for best quality</p> -->
+                </div>
+                <div style="clear: both;"></div>
+              </div>
+              <div class="downloadDiv">
+                <button id="downloadButAC" class="ACdownloadButton">download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Activity Search Engine
+      https://activites.jaerenee.repl.co/ -->
+      <div id="IFA" class="w3-modal" role="dialog">
+        <div class="w3-modal-content">
+          <div class="IFAbox">
+            <div style="text-align: right;">
+              <button id="IFAclose" onclick="document.getElementById('IFA').style.display='none'">close</button>
+            </div>
+            <iframe id="IFAframe" src="https://activitesasiframe.jaerenee.repl.co/" title="Activty Search"
+              allowfullscreen=true height=100% style="border:none;" width=100%></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Dino Game -->
+      <div id="DG" class="w3-modal" role="dialog">
+        <div class="w3-modal-content">
+          <div class="DGbox">
+            <div style="text-align: right;">
+              <button id="closeDG" onclick="document.getElementById('DG').style.display='none'">close</button>
+            </div>
+            <br>
+            <div style="background-color: white; text-align: center; height: 80%; width: 100%; margin-bottom: 2%">
+              <iframe src="https://dinoframe.jaerenee.repl.co/" title="Dino Game" allowfullscreen=true height=100%
+                style="border:none;" width=100%></iframe>
+            </div>
+            <a class="hiddenDino" href="https://www.youtube.com/watch?v=ooru4pyEv1I"> Made with tutorial by Coding With
+              Adam </a>
+          </div>
+        </div>
+      </div>
+      <!-- Writing Prompt-->
+      <div id="WP" class="w3-modal" style="display: none;">
+        <div class="w3-modal-content">
+          <div class="WPcontainer" id="home">
+            <div style="text-align: right;">
+              <button class="WPclose" onclick="document.getElementById('WP').style.display='none'">close</button>
+            </div>
+            <div style="user-select: none">
+              <span class="title-g">Writing Prompts</span>
+              <span class="icon">✍️</span>
+            </div>
+            <div class="space"></div>
+            <div id="generate_space">
+              The magic begins... Start by clicking Generate.
+              Heart favorite prompts by clicking the heart. and then find them in the 🖤 prompts page.
+            </div>
+            <div class="love_section">
+              <p id="love" style="user-select: none; display: none;">🖤</p>
+            </div>
+            <div id="WPgenerate">
+              <button onclick="generate()">generate</button>
+              <div id="hearted">
+                <button id="heartedBut" onclick="favorites()">Your 🖤 Prompts</button>
+              </div>
+            </div>
+            <!-- favorite page -->
+            <div class="WPcontainer" id="favs" style="display: none;">
+              <div class="topbuttons">
+                <button class="WPclose" onclick="clearAndClose()">close</button>
+              </div>
+              <p style="user-select: none"> Your favorited prompts. Share completed stories with <a
+                  href="https://twitter.com/search?q=%23pagebyjae&src=typed_query"><i class="hashtag">#pagebyjae</i></a>
+              </p>
+              <div id="favBlocks"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Music Shuffler AKA Spotify API -->
+      <div id="SA" class="w3-modal" style="display: none;">
+        <div class="w3-modal-content">
+          <div class="SAcontainer">
+            <div>
+              <form id="analyze-form">
+                <label for="songName">
+                  Enter a song title:
+                </label>
+                <input type="text" id="songName" name="songName" />
+                <input id="runForm" type="submit" value="Submit" />
+                <button id="SAclose" style="text-align: right;"
+                  onclick="document.getElementById('SA').style.display='none'">close</button>
+              </form>
+              <p style="margin: 0px; margin-top: 1px;  padding: 0px;"><i>Click the title to go to the Spotify page! You
+                  can also enter artist names. Press submit again for a new recommendation.</i></p>
+              <br />
+              <div id="input">
+              </div>
+              <div id="output">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <br style="clear: both;">
+    <br>
+    <hr class="heartsHR">
+    <div class="hearts"></div>
+    <hr class="heartsHR">
+    <!-- <footer> -->
+    <section>
+      <div class="contactDiv">
+        <br>
+        <h2>Contact Me</h2>
+        <p>✉️ Email:</p>
+        <span><a href="mail&#116;o:jaelyn.rogers.uh&#64;gmail&#46;com"> jaelyn.rogers.uh@gmail.com</a></span>
+        </br>
+        <br>
+      </div>
+    </section>
+    <hr class="heartsHR">
+    <div class="hearts"></div>
+    <hr class="heartsHR">
+    <!-- </footer> -->
+  </div>
+
+  <script src="script.js"></script>
+  <script src="pg.js"></script>
+  <script src="rps.js"></script>
+  <script src="ttt.js"></script>
+  <script src="ac.js"></script>
+  <script src="wp.js"></script>
+  <script src="sa.js"></script>
+</body>
+
+</html>

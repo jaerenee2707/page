@@ -1,0 +1,153 @@
+.WPcontainer {
+  background-color: #95dbb3;
+  box-shadow: 1px 1px 3px #353a3b;
+  height: 90%;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20px;
+
+  overflow: auto;
+}
+
+.WPclose {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #1bee77;
+  color: black;
+  user-select: none;
+}
+
+p {
+  font-size: 1em;
+}
+
+.WPclose:hover {
+  background-color: #18c362;
+  box-shadow: 1px 1px #128e10;
+}
+
+#favBlocks {
+  overflow: auto;
+  height: 70%;
+  border: solid black 1px;
+}
+
+#favBlocks div {
+  padding: 8px;
+  font-size: 19px;
+  border: solid black 1px;
+  display: flex;
+  /* sets it to one side vs the other */
+  justify-content: space-between;
+  /* sets it to one side vs the other */
+  align-items: center;
+  /* sets it to one side vs the other */
+  background-color: #ffffff;
+}
+
+#favBlocks div p:first-child {
+  flex-basis: 15%;
+  /* sets it to one side vs the other */
+  margin-right: 6px;
+}
+
+.icon {
+  user-select: none;
+  font-size: 2em;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.title-g {
+  margin-right: 10px;
+  user-select: none;
+  font-size: 2em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.space {
+  height: 15%;
+  /* border:1px solid black; */
+}
+
+#hearted {
+  text-align: center;
+  width: 100%;
+}
+
+#hearted button {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #1bee77;
+  border: 1px solid #000000;
+  color: black;
+  padding: 5px;
+  user-select: none;
+}
+
+#hearted button:hover {
+  background-color: #18c362;
+  box-shadow: 1px
+}
+
+#WPgenerate {
+  text-align: center;
+  width: 100%;
+}
+
+#WPgenerate button {
+  background-color: #95dbb3;
+  box-shadow: 1px 1px 3px #353a3b;
+  cursor: pointer;
+  border-radius: 20px;
+  color: black;
+  padding: 5px;
+  user-select: none;
+  margin-bottom: 20px;
+}
+
+#WPgenerate button:hover {
+  background-color: #18c362;
+  box-shadow: 1px 1px #128e10;
+  cursor: pointer;
+}
+
+#generate_space {
+  min-height: 150px;
+  max-height: 150px;
+  font-size: 19px;
+}
+
+.love_section {
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#love {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#love:hover {
+  transform: scale(1.3);
+}
+
+.hashtag {
+  color: #0f3921;
+  text-decoration-line: underline;
+}
+
+.hashtag:hover {
+  color: #1e663e;
+}

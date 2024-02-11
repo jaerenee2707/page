@@ -1,0 +1,203 @@
+ All projects were built using HTML, CSS, and JavaScript
+ - Activity Search Engine: A web app that provides a list of activities users can search for based on their preference and save it
+
+ - Art Gallery: Created a web app that showcases digital drawings I've made and allows the user to search them and rate them out of 5 stars  using React, Color Thief, and PHP. 
+
+ - Avatar Creator: Designed a web app that lets users create and customize their own avatars with more than 50 different clothes and colors  using Canvas and PHP. 
+ 
+- Password Generator: Created a web app to generate strong and secure passwords with up to 16 characters based on user preferences. 
+
+- Tic-Tac-Toe Game: Designed an app using jQuery that allows users to play against the computer or another player.
+
+- Rock Paper Scissors Game: A web app that lets users play the rock paper scissors game against the computer using Canvas
+
+
+-----------------------------------------------------------------------------
+🎨 Avatar Creator 🎨
+--------------------
+Allow users to create and customize their own avatars by choosing from more than 50 different facial features, hairstyles, clothing, and colors. Users can select from a variety of options to personalize their avatars, and the changes are immediately reflected on the canvas. Made with PHP, HTML, JS, and CSS
+
+Key Features:
+-------------
+Customizable Avatars: Users can select and change various avatar components, including the body, eyes, shirts, pants, and hair.
+
+Real-time Updates: As users make selections, the avatar canvas updates in real-time to reflect the changes.
+
+Color Selection: The project includes a color picker for customizing the color of specific avatar components like body, eyes, shirts, pants, and hair.
+
+Tab Navigation: The interface uses tab navigation to organize the avatar components, making it easy for users to switch between different categories.
+
+Download Functionality: Users can download their customized avatars as a PNG image with a dedicated "Download" button.
+
+Technical Details:
+-------------------
+JavaScript Functions: The project includes JavaScript functions to manage the avatar components, handle color changes, and save user selections to local storage.
+
+Canvas Drawing: The avatar components are displayed on HTML5 canvas elements, and JavaScript is used to draw and update the components on the canvas.
+
+Data Fetching: The project fetches data for avatar components (hair, shirts, and pants) from external sources using the Fetch API.
+
+Event Handling: Event listeners are used to respond to user interactions, such as selecting avatar components and updating colors.
+
+Local Storage: User selections are stored in local storage, allowing users to maintain their custom avatars across sessions.
+----------------------------------------------------------------------------------
+🧩 Activity Search Engine 🧩
+-----------------------------
+The Activity Search Engine is a web-based application designed to provide users with random activity suggestions based on their interests. Users can search for specific activities, view detailed information about each activity, and add their favorite activities to a list. The application aims to inspire users to explore various recreational and leisure activities to promote well-being and enjoyment.
+
+Local Storage: Local Storage is utilized to store users' favorite activities, ensuring that their preferences are saved for future visits.
+
+Event Handling: Event handling in JavaScript is employed to respond to user interactions such as clicking on activities, saving favorites, and triggering search queries.
+
+Dynamic Content Creation: JavaScript is used to dynamically create and display activity suggestions and detailed activity descriptions.
+
+Randomization: Random number generation is used to suggest random activities, adding an element of surprise to the user experience.
+
+User Interface (UI): The UI components include buttons for saving favorite activities, navigating between pages, and searching for specific activities.
+
+Search Functionality: The application provides users with a search bar to enter keywords or tags related to their interests, allowing them to filter and find activities that match their preferences.
+
+Displaying Activity Details: Users can click on activity suggestions to view detailed information, including titles, descriptions, emojis, and the option to add them to their favorites.
+
+Favoriting Activities: Users can mark their favorite activities with a heart icon, which is stored using Local Storage. This feature allows users to keep track of their preferred activities.
+
+Changing Pages: The application allows users to navigate between the home page, search results page, and their list of favorite activities.
+
+Tagging System: A tag system is used to categorize activities based on their characteristics, making it easier for users to find activities that match their interests.
+
+Search Feedback Icon: The search input includes a dynamic feedback icon that changes upon user interactions.
+------------------------------------------------------------------------------
+🖼️ Art Gallery 🖼️
+-----------------
+The Art Gallery project is a web-based platform designed to showcase a collection of artworks. Users can browse through the gallery, search for specific artworks, and view them in a lightbox. The project allows users to rate their favorite artworks using a heart-based rating system.
+
+Key Features:
+------------
+Key Features:
+
+Search Functionality: Users can search for artworks by keywords or tags to find their desired pieces easily.
+
+Gallery Layout: Artworks are displayed in a responsive grid layout with captions and dominant color overlays for a visually appealing presentation.
+
+Lightbox Viewing: A lightbox allows users to view selected artworks in full size, providing a closer look at the details.
+
+Rating System: Users can rate artworks using a heart-based system, indicating their level of appreciation for each piece.
+
+Dominant color overlays for visual aesthetics
+
+Technical Details:
+------------------
+Media Queries: Used for creating a responsive design that adjusts to various screen sizes.
+
+Event Listeners and Handlers: Implemented for user interactions such as search input changes, image clicks, and rating clicks.
+
+Local Storage: Used for storing and retrieving user-selected ratings to maintain state between sessions.
+
+Image Analysis: The project uses the ColorThief library to extract the dominant colors from the images and apply them as overlays.
+
+Search Functionality: The search feature listens for changes in the search input and dynamically updates the gallery by filtering artworks based on user queries.
+
+Lightbox: The lightbox functionality is implemented using JavaScript and allows users to interact with images by displaying them in a modal window.
+
+Rating System: Users can interact with the rating system by clicking on heart icons, and their ratings are stored in local storage to persist across sessions.
+
+---------------------------------------------------------------------------------------
+✏️ Writing Prompt Generator ✏️
+------------------------------
+The Writing Prompt Generator is a creative tool designed to inspire writers by providing them with random prompts for storytelling. It generates prompts with various elements, including genre, setting, plot, twist, and character, to kickstart your imagination and help you craft compelling narratives. You can also save your favorite prompts for future reference.
+
+Key Features:
+-------------
+Random Prompt Generation: With a single click on the "generate" button, you receive a unique writing prompt that combines genre, setting, plot, twist, and character.
+
+Favorites: Save your favorite prompts with a simple click on the heart icon, allowing you to access them later in the "Your 🖤 Prompts" section.
+
+Prompt Variability: The generator offers prompts from a variety of genres and settings, ensuring diverse and creative inspiration.
+
+User-Friendly Interface: The project's clean and intuitive design makes it easy to navigate, generate prompts, and manage your favorite prompts.
+
+Technical Details:
+------------------
+Prompt Generation: Random prompts are generated by selecting elements (genre, setting, plot, twist, character) from predefined arrays.
+
+Favorites Storage: The "heart" button allows users to save their favorite prompts by storing them in local storage, ensuring persistence across sessions.
+------------------------------------------------------------------------------------
+✋🏾Rock Paper Scissors Game✋🏾
+----------------------------
+The Rock, Paper, Scissors Game is a fun and interactive web application that allows users to play the classic hand game against a computer opponent. 
+
+Key Features:
+-------------
+Interactive Gameplay: Users can select their choice (rock, paper, or scissors) by clicking on the corresponding button.
+
+Computer Opponent: The computer opponent randomly selects its move, creating a challenging gaming experience.
+
+Scoring System: The project maintains a score tally for both the player and the computer, updating the scores after each round.
+
+Real-Time Results: The game displays the results of each round, indicating the winner.
+
+Responsive Design: The user interface is designed to be responsive, ensuring an optimal gaming experience on various devices.
+
+Technical Details:
+------------------
+Event Listeners: Event listeners are used to detect player selections when buttons are clicked, initiating the game.
+
+Random Selection: The computer's move is determined through random selection to create unpredictability in the game.
+-----------------------------------------------------------------------------------------
+✏️ Tic Tac Toe ✏️
+-----------------
+The game offers two modes: Player vs. Player and Player vs. Computer, making it accessible for different preferences.
+
+Winning Logic: The game checks for winning combinations after each move and alerts the player when a win is achieved.
+
+Reset Game: Users have the option to reset the game board and start a new game at any time.
+----------------------------------------------------------------------------------------
+🔒 Password Generator 🔒
+-------------------------
+The Password Generator is a simple yet powerful tool that allows users to generate strong and secure passwords with various options. Users can customize the length of the password and choose from different character sets, including lowercase letters, numbers, symbols, and uppercase letters. The generated password can be copied to the clipboard for immediate use.
+
+Key Features:
+
+Custom Password Generation: Users can customize the length of the password, making it suitable for various security requirements.
+Character Set Selection: Users can select character sets, including lowercase letters, numbers, symbols, and uppercase letters, to create complex and secure passwords.
+Copy to Clipboard: Generated passwords can be copied to the clipboard with a single click, allowing for easy and quick use.
+Visual Indicator: A copy icon appears when a password is generated, providing a visual cue for users to copy the password to the clipboard.
+Feedback Message: Users receive feedback when the password is successfully copied, enhancing the user experience.
+
+Technical Details:
+
+Slider for Password Length: A range input element allows users to adjust the password length, with the selected value displayed beside it.
+Character Set Handling: The project uses different character sets for numbers, symbols, lowercase letters, and uppercase letters to create a customizable pool of characters for password generation.
+Password Generation: A function generates passwords based on the selected options.
+Copy to Clipboard: The project utilizes the navigator.clipboard API to copy the generated password to the user's clipboard.
+Event Listeners: Event listeners are used to detect user interactions, such as button clicks and slider adjustments.
+----------------------------------------------------------------------------------------
+🦖 Dino Game 🦖
+---------------
+The Dino Game Recreation is a fun project that recreates the popular hidden game in Google Chrome.
+
+Key Features:
+
+Gameplay Experience: Recreates the core gameplay experience of the classic Chrome Dino Game.
+Endless Runner: The game is an endless runner, with the dinosaur running continuously and the player having to time their jumps to avoid obstacles.
+Responsive Design: The game's iframe is embedded within the project and is responsive, allowing users to play the game on various screen sizes.
+Educational Reference: Acknowledges the tutorial source, providing credit to Coding With Adam, which can be a valuable resource for those interested in learning how to create such games.
+--------------------------------------------------------------------------------------------
+
+1. **Activity Search Engine**:
+   - Developed a dynamic web app enabling users to discover personalized activity recommendations. Enhanced user experience through activity preference customization and saved lists.
+
+2. **Art Gallery**:
+   - Crafted a captivating web gallery with React, PHP, and Color Thief, featuring my digital artwork. Empowered users to explore, search, and rate masterpieces with a user-friendly 5-star rating system.
+
+3. **Avatar Creator**:
+   - Pioneered a web application leveraging Canvas and PHP, providing users with over 50 customizable avatar options. Ensured a tailored experience for individuals to design their avatars with diverse clothing and color choices.
+
+4. **Password Generator**:
+   - Engineered a secure web utility employing user preferences to create robust passwords up to 16 characters long. Ensured data protection through innovative password generation algorithms.
+
+5. **Tic-Tac-Toe Game**:
+   - Crafted an interactive gaming platform, allowing users to engage in strategic tic-tac-toe battles. Supported both player-versus-computer and player-versus-player modes for diverse gaming experiences.
+
+6. **Rock Paper Scissors Game**:
+   - Designed an engaging web-based game where users can challenge a computer opponent in classic rock-paper-scissors. Enhanced user interface through Canvas, ensuring an enjoyable gaming encounter.

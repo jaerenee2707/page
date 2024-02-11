@@ -1,0 +1,79 @@
+/* CSS */
+#passwordModule {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid black;
+  width: 360px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #bfe8e6;
+}
+.box{
+  font-size: 25px;
+  border: 1px solid black;
+  height: 40px;
+  padding: 4px; 
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: white;
+}
+.checkboxes{
+  text-align: left;
+}
+#myIcon {
+  margin-left: 10px;
+}
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 40px;
+  font-size: 15px;
+  opacity: 50%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  top: -25px;
+  left: -13px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#copyMessage{
+  background-color: #447471;
+  opacity: 70%;
+  color: white;
+}
+#boxCopyMessage{
+  width: 325px;
+  
+}
+#mySlider{
+  accent-color: #447471;
+  background-color: white;
+}
+#generateButton{
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #6ca39f;
+  color: white;
+}
+#generateButton:hover{
+  background-color: #396f6b;
+}
